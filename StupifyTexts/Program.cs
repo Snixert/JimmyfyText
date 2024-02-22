@@ -411,7 +411,7 @@ void modifyLetterK()
 
 void modifyLetterL()
 {
-    i = rnd.Next(6);
+    i = rnd.Next(5);
     switch (i)
     {
         case 0:
@@ -424,12 +424,9 @@ void modifyLetterL()
             jimmyfiedText += 'l';
             break;
         case 3:
-            jimmyfiedText += 'լ';
-            break;
-        case 4:
             jimmyfiedText += 'Ḹ';
             break;
-        case 5:
+        case 4:
             jimmyfiedText += 'ĺ';
             break;
     }
@@ -715,7 +712,7 @@ void modifyLetterV()
 
 void modifyLetterW()
 {
-    i = rnd.Next(6);
+    i = rnd.Next(4);
     switch (i)
     {
         case 0:
@@ -729,12 +726,6 @@ void modifyLetterW()
             break;
         case 3:
             jimmyfiedText += '₩';
-            break;
-        case 4:
-            jimmyfiedText += 'Ш';
-            break;
-        case 5:
-            jimmyfiedText += 'Щ';
             break;
     }
 }
@@ -854,14 +845,17 @@ void modifyQuestionMark()
 
 void modifySpace()
 {
-    i = rnd.Next(1);
+    i = rnd.Next(2);
     switch (i)
     {
         case 0:
             jimmyfiedText += ' ';
+            jimmyfiedText += ' ';
             break;
         case 1:
-            jimmyfiedText += '_';
+            jimmyfiedText += ' ';
+            jimmyfiedText += ' ';
+            jimmyfiedText += ' ';
             break;
     }
 }
